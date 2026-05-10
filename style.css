@@ -877,4 +877,81 @@ ACADEMICS PAGE
 
 }
 
+/* ADMISSION FORM */
+
+.admission-form {
+  background: var(--white);
+  padding: 45px;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.input-box {
+  margin-bottom: 22px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--brown);
+  font-weight: 800;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+  font-size: 15px;
+  outline: none;
+  color: var(--text);
+}
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus {
+  border-color: var(--brown);
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  background: var(--brown);
+  color: var(--white);
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: var(--dark);
+}
+
+@media (max-width: 900px) {
+
+  .admission-form {
+    padding: 28px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 
