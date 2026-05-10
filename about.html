@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Bilal Ibnu Rabah International Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <img src="bilal logo.png" alt="Bilal Ibnu Rabah Logo">
+      <div>
+        <h2>Bilal Ibnu Rabah</h2>
+        <span>International Academy</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+      <a href="portal.html" class="portal-btn">Portal</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-content">
+    <span class="section-tag">About Our School</span>
+    <h1>Building Knowledge, Faith and Character</h1>
+    <p>
+      Bilal Ibnu Rabah International Academy is committed to raising disciplined,
+      confident and morally upright learners through quality Western and Islamic education.
+    </p>
+  </div>
+</section>
+
+<section class="section about-page">
+  <div class="container about-grid">
+    <div>
+      <span class="section-tag">Who We Are</span>
+      <h2>A Balanced School for Academic and Moral Excellence</h2>
+      <p>
+        Bilal Ibnu Rabah International Academy provides a learning environment where children
+        are trained academically, morally and spiritually.
+      </p>
+      <p>
+        We believe that education should not only prepare students for examinations, but also
+        prepare them to become responsible, respectful and useful members of society.
+      </p>
+      <p>
+        Our school combines Western education with Islamic values, helping students grow with
+        confidence, discipline, good manners and strong knowledge.
+      </p>
+    </div>
+
+    <div class="motto-card">
+      <img src="bilal logo.png" alt="Bilal Ibnu Rabah Logo">
+      <h3>Knowledge📖<br>is Wealth</h3>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-tag">Our Mission & Vision</span>
+      <h2>What We Stand For</h2>
+      <p>We are focused on building students who are excellent in learning and strong in character.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>
+          To provide quality Western and Islamic education that develops students academically,
+          morally, spiritually and socially.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Our Vision</h3>
+        <p>
+          To become a respected academy known for academic excellence, Islamic values,
+          discipline and leadership development.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Our Motto</h3>
+        <p>
+          Knowledge📖 is Wealth. We believe true knowledge gives children direction,
+          confidence and a better future.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section why">
+  <div class="container why-grid">
+    <div>
+      <span class="section-tag">Core Values</span>
+      <h2>Values We Teach Every Child</h2>
+
+      <div class="features">
+        <p>✓ Fear of Allah and Islamic manners</p>
+        <p>✓ Discipline and respect</p>
+        <p>✓ Academic excellence</p>
+        <p>✓ Honesty and responsibility</p>
+        <p>✓ Confidence and leadership</p>
+      </div>
+    </div>
+
+    <div class="stats-card">
+      <div>
+        <h3>Nursery</h3>
+        <p>Early learning and moral foundation</p>
+      </div>
+      <div>
+        <h3>Primary</h3>
+        <p>Strong academic and character development</p>
+      </div>
+      <div>
+        <h3>Secondary</h3>
+        <p>Preparation for future success</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section admission">
+  <div class="container admission-box">
+    <div>
+      <span class="section-tag light-tag">Join Us</span>
+      <h2>Give Your Child a Strong Foundation</h2>
+      <p>
+        Enrol your child in a school that values both academic excellence and Islamic morals.
+      </p>
+    </div>
+
+    <a href="admission.html" class="btn white-btn">Start Admission</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="bilal logo.png" alt="Bilal Ibnu Rabah Logo">
+      <div>
+        <h3>Bilal Ibnu Rabah International Academy</h3>
+        <p>Knowledge📖 is Wealth</p>
+      </div>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>No 5/7 Ahmad Chanchangi Road, Kinkinau GRA, Kaduna South, Nigeria.</p>
+      <p>081XXXXXXX</p>
+      <p>bilalibnurabahintlacademy@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 Bilal Ibnu Rabah International Academy. All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
+  });
+</script>
+
+</body>
+</html>
