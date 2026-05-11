@@ -1453,49 +1453,74 @@ ACADEMICS PAGE
 
 }
 
-/* FIX FADED / INVISIBLE TEXT */
+/* FINAL TEXT VISIBILITY FIX */
 
-.stats-card,
-.admission {
-  background: linear-gradient(135deg, var(--brown), var(--dark)) !important;
+.stats-card {
+  background: #9b5524 !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
+.stats-card div,
 .stats-card h3,
 .stats-card p,
-.admission h2,
-.admission p {
+.stats-card strong,
+.stats-card span {
   color: #ffffff !important;
+  opacity: 1 !important;
 }
 
-.admission .section-tag {
+.admission {
+  background: #9b5524 !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.admission h1,
+.admission h2,
+.admission h3,
+.admission p,
+.admission span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.admission .section-tag,
+.light-tag {
   background: #ffffff !important;
-  color: var(--brown) !important;
+  color: #9b5524 !important;
 }
 
 .white-btn {
   background: #ffffff !important;
-  color: var(--brown) !important;
+  color: #9b5524 !important;
 }
 
+/* DASHBOARD SIDEBAR MOBILE FIX */
 .dashboard-sidebar {
-  background: linear-gradient(180deg, var(--brown), var(--dark)) !important;
-}
-
-.dashboard-sidebar,
-.dashboard-sidebar h3,
-.dashboard-sidebar p,
-.dash-menu a {
+  background: #9b5524 !important;
   color: #ffffff !important;
 }
 
-@media (max-width: 900px) {
-  .stats-card {
-    background: var(--brown) !important;
-  }
-
-  .stats-card h3,
-  .stats-card p {
-    color: #ffffff !important;
-  }
+.dashboard-sidebar * {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
+@media (max-width: 950px) {
+  .dashboard-layout {
+    display: block !important;
+  }
+
+  .dashboard-sidebar {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    padding: 25px !important;
+  }
+
+  .dashboard-main {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+}
