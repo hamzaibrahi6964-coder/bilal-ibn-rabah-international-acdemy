@@ -1586,3 +1586,27 @@ ACADEMICS PAGE
   }
 
 }
+
+/* TEACHER DASHBOARD */
+
+.teacher-form {
+  background: var(--white);
+}
+
+.teacher-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.teacher-form input[readonly] {
+  background: #fff3e8;
+  font-weight: 900;
+  color: var(--brown);
+}
+
+@media (max-width: 950px) {
+  .teacher-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
