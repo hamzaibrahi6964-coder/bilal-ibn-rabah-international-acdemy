@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal | Bilal Ibnu Rabah International Academy</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <img src="bilal logo.png" alt="School Logo">
+      <div>
+        <h2>Bilal Ibnu Rabah</h2>
+        <span>International Academy</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="admission.html">Admission</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="portal.html" class="portal-btn active">Portal</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-content">
+    <span class="section-tag">School Portal</span>
+    <h1>Access Your School Dashboard</h1>
+    <p>
+      Select your portal below. Parents, teachers and admins can access their dashboards
+      for school information, results, activities and management.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-tag">Choose Portal</span>
+      <h2>Login Based on Your Role</h2>
+      <p>This portal will later be connected to Firebase or Supabase backend.</p>
+    </div>
+
+    <div class="portal-grid">
+      <div class="portal-card">
+        <div class="portal-icon">👨‍👩‍👧</div>
+        <h3>Parent Portal</h3>
+        <p>
+          Parents can view student profile, school fees, results, activities,
+          announcements and academic progress.
+        </p>
+        <a href="parent-dashboard.html" class="btn primary-btn">Enter Parent Portal</a>
+      </div>
+
+      <div class="portal-card">
+        <div class="portal-icon">👨‍🏫</div>
+        <h3>Teacher Portal</h3>
+        <p>
+          Teachers can manage class records, upload results, view students,
+          and support learning activities.
+        </p>
+        <a href="teacher-dashboard.html" class="btn primary-btn">Enter Teacher Portal</a>
+      </div>
+
+      <div class="portal-card">
+        <div class="portal-icon">🛡️</div>
+        <h3>Admin Portal</h3>
+        <p>
+          Admin can manage students, teachers, admissions, school data,
+          results and portal access.
+        </p>
+        <a href="admin-dashboard.html" class="btn primary-btn">Enter Admin Portal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container why-grid">
+    <div>
+      <span class="section-tag">Portal Features</span>
+      <h2>Smart School Management System</h2>
+
+      <div class="features">
+        <p>✓ Parent dashboard for student information</p>
+        <p>✓ Teacher dashboard for result upload</p>
+        <p>✓ Admin dashboard for school management</p>
+        <p>✓ Student results and academic records</p>
+        <p>✓ Future backend connection with Firebase or Supabase</p>
+      </div>
+    </div>
+
+    <div class="stats-card">
+      <div>
+        <h3>Parent</h3>
+        <p>View child progress</p>
+      </div>
+
+      <div>
+        <h3>Teacher</h3>
+        <p>Manage academic records</p>
+      </div>
+
+      <div>
+        <h3>Admin</h3>
+        <p>Control school portal</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="bilal logo.png" alt="Logo">
+      <div>
+        <h3>Bilal Ibnu Rabah International Academy</h3>
+        <p>Knowledge📖 is Wealth</p>
+      </div>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="admission.html">Admission</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>No 5/7 Ahmad Chanchangi Road, Kinkinau GRA, Kaduna South, Nigeria.</p>
+      <p>081XXXXXXX</p>
+      <p>bilalibnurabahintlacademy@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © 2026 Bilal Ibnu Rabah International Academy. All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+</script>
+
+</body>
+</html>
