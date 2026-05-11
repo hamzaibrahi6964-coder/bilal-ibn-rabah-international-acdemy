@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Dashboard | Bilal Ibnu Rabah International Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="dashboard-layout">
+
+  <aside class="dashboard-sidebar">
+    <div class="dash-logo">
+      <img src="bilal logo.png" alt="Logo">
+      <h3>Parent Portal</h3>
+      <p>Bilal Ibnu Rabah Academy</p>
+    </div>
+
+    <nav class="dash-menu">
+      <a href="parent-dashboard.html" class="active">Dashboard</a>
+      <a href="#profile">Student Profile</a>
+      <a href="#result">Result</a>
+      <a href="#fees">School Fees</a>
+      <a href="#notice">Notice</a>
+      <a href="portal.html">Back to Portal</a>
+    </nav>
+  </aside>
+
+  <main class="dashboard-main">
+
+    <div class="dashboard-top">
+      <div>
+        <h1>Welcome, Parent</h1>
+        <p>View your child’s academic progress and school information.</p>
+      </div>
+
+      <a href="index.html" class="logout-btn">Logout</a>
+    </div>
+
+    <div class="dash-cards">
+      <div class="dash-card">
+        <h3>Student</h3>
+        <p>Ahmad Ibrahim</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Class</h3>
+        <p>JSS 1</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Term</h3>
+        <p>First Term</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Status</h3>
+        <p>Active</p>
+      </div>
+    </div>
+
+    <section class="dashboard-section" id="profile">
+      <div class="dash-section-title">
+        <h2>Student Profile</h2>
+        <p>Basic student information.</p>
+      </div>
+
+      <div class="profile-grid">
+        <div><strong>Student Name:</strong> Ahmad Ibrahim</div>
+        <div><strong>Student ID:</strong> BIRIA/JSS1/001</div>
+        <div><strong>Class:</strong> JSS 1</div>
+        <div><strong>Gender:</strong> Male</div>
+        <div><strong>Parent Name:</strong> Mr. Ibrahim</div>
+        <div><strong>Phone:</strong> 081XXXXXXX</div>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="result">
+      <div class="dash-section-title">
+        <h2>Academic Result</h2>
+        <p>Assignment, C.A tests, exam, total, grade and remark.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Assignment</th>
+              <th>1st C.A</th>
+              <th>2nd C.A</th>
+              <th>Exam</th>
+              <th>Total</th>
+              <th>Grade</th>
+              <th>Remark</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Mathematics</td>
+              <td>10</td>
+              <td>9</td>
+              <td>10</td>
+              <td>65</td>
+              <td>94</td>
+              <td>A</td>
+              <td>Excellent</td>
+            </tr>
+
+            <tr>
+              <td>English Language</td>
+              <td>9</td>
+              <td>8</td>
+              <td>9</td>
+              <td>60</td>
+              <td>86</td>
+              <td>A</td>
+              <td>Excellent</td>
+            </tr>
+
+            <tr>
+              <td>Basic Science</td>
+              <td>8</td>
+              <td>8</td>
+              <td>7</td>
+              <td>55</td>
+              <td>78</td>
+              <td>B</td>
+              <td>Very Good</td>
+            </tr>
+
+            <tr>
+              <td>Islamic Studies</td>
+              <td>10</td>
+              <td>10</td>
+              <td>9</td>
+              <td>62</td>
+              <td>91</td>
+              <td>A</td>
+              <td>Excellent</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="result-summary">
+        <div><strong>Total Score:</strong> 349 / 400</div>
+        <div><strong>Average:</strong> 87.25%</div>
+        <div><strong>Overall Grade:</strong> A</div>
+        <div><strong>Teacher Remark:</strong> Excellent performance. Keep it up.</div>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="fees">
+      <div class="dash-section-title">
+        <h2>School Fees</h2>
+        <p>Fee payment status.</p>
+      </div>
+
+      <div class="fees-box">
+        <div>
+          <strong>First Term Fees</strong>
+          <p>Status: <span class="paid">Paid</span></p>
+        </div>
+
+        <div>
+          <strong>Balance</strong>
+          <p>₦0.00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard-section" id="notice">
+      <div class="dash-section-title">
+        <h2>School Notice</h2>
+        <p>Latest school announcement.</p>
+      </div>
+
+      <div class="notice-box">
+        <p>
+          Parents are advised to check their child’s results and contact the school
+          for any academic or admission enquiry.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+</section>
+
+</body>
+</html>
