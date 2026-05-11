@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard | Bilal Ibnu Rabah International Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="dashboard-layout">
+
+  <aside class="dashboard-sidebar">
+    <div class="dash-logo">
+      <img src="bilal logo.png" alt="Logo">
+      <h3>Teacher Portal</h3>
+      <p>Bilal Ibnu Rabah Academy</p>
+    </div>
+
+    <nav class="dash-menu">
+      <a href="teacher-dashboard.html" class="active">Dashboard</a>
+      <a href="#upload">Upload Result</a>
+      <a href="#records">Result Records</a>
+      <a href="portal.html">Back to Portal</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </aside>
+
+  <main class="dashboard-main">
+
+    <div class="dashboard-top">
+      <div>
+        <h1>Welcome, Teacher</h1>
+        <p>Upload student results with assignment, C.A tests and examination scores.</p>
+      </div>
+
+      <a href="login.html" class="logout-btn">Logout</a>
+    </div>
+
+    <div class="dash-cards">
+      <div class="dash-card">
+        <h3>Class</h3>
+        <p>JSS 1</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Term</h3>
+        <p>First Term</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Subject</h3>
+        <p>Mathematics</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Status</h3>
+        <p>Active</p>
+      </div>
+    </div>
+
+    <section class="dashboard-section" id="upload">
+      <div class="dash-section-title">
+        <h2>Upload Student Result</h2>
+        <p>Enter Assignment, 1st C.A, 2nd C.A and Exam score. Total, grade and remark will calculate automatically.</p>
+      </div>
+
+      <form class="teacher-form" id="resultForm">
+
+        <div class="form-grid">
+
+          <div class="input-box">
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Example: Ahmad Ibrahim" required>
+          </div>
+
+          <div class="input-box">
+            <label>Student ID</label>
+            <input type="text" id="studentId" placeholder="Example: BIRIA/JSS1/001" required>
+          </div>
+
+          <div class="input-box">
+            <label>Class</label>
+            <select id="studentClass" required>
+              <option value="">Select class</option>
+              <option>Nursery</option>
+              <option>Primary 1</option>
+              <option>Primary 2</option>
+              <option>Primary 3</option>
+              <option>Primary 4</option>
+              <option>Primary 5</option>
+              <option>Primary 6</option>
+              <option>JSS 1</option>
+              <option>JSS 2</option>
+              <option>JSS 3</option>
+              <option>SS 1</option>
+              <option>SS 2</option>
+              <option>SS 3</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label>Term</label>
+            <select id="term" required>
+              <option value="">Select term</option>
+              <option>First Term</option>
+              <option>Second Term</option>
+              <option>Third Term</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label>Subject</label>
+            <input type="text" id="subject" placeholder="Example: Mathematics" required>
+          </div>
+
+          <div class="input-box">
+            <label>Session</label>
+            <input type="text" id="session" placeholder="Example: 2025/2026" required>
+          </div>
+
+          <div class="input-box">
+            <label>Assignment</label>
+            <input type="number" id="assignment" placeholder="Max 10" min="0" max="10" required>
+          </div>
+
+          <div class="input-box">
+            <label>1st C.A Test</label>
+            <input type="number" id="ca1" placeholder="Max 10" min="0" max="10" required>
+          </div>
+
+          <div class="input-box">
+            <label>2nd C.A Test</label>
+            <input type="number" id="ca2" placeholder="Max 10" min="0" max="10" required>
+          </div>
+
+          <div class="input-box">
+            <label>Exam</label>
+            <input type="number" id="exam" placeholder="Max 70" min="0" max="70" required>
+          </div>
+
+          <div class="input-box">
+            <label>Total</label>
+            <input type="text" id="total" readonly placeholder="Auto total">
+          </div>
+
+          <div class="input-box">
+            <label>Grade</label>
+            <input type="text" id="grade" readonly placeholder="Auto grade">
+          </div>
+
+        </div>
+
+        <div class="input-box">
+          <label>Remark</label>
+          <input type="text" id="remark" readonly placeholder="Auto remark">
+        </div>
+
+        <button type="submit" class="submit-btn">Save Result</button>
+
+      </form>
+    </section>
+
+    <section class="dashboard-section" id="records">
+      <div class="dash-section-title">
+        <h2>Result Records</h2>
+        <p>Saved results will appear here for preview.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>Student</th>
+              <th>ID</th>
+              <th>Class</th>
+              <th>Subject</th>
+              <th>Assignment</th>
+              <th>1st C.A</th>
+              <th>2nd C.A</th>
+              <th>Exam</th>
+              <th>Total</th>
+              <th>Grade</th>
+              <th>Remark</th>
+            </tr>
+          </thead>
+
+          <tbody id="resultBody">
+            <tr>
+              <td>Ahmad Ibrahim</td>
+              <td>BIRIA/JSS1/001</td>
+              <td>JSS 1</td>
+              <td>Mathematics</td>
+              <td>10</td>
+              <td>9</td>
+              <td>10</td>
+              <td>65</td>
+              <td>94</td>
+              <td>A</td>
+              <td>Excellent</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+</section>
+
+<script>
+const assignment = document.getElementById("assignment");
+const ca1 = document.getElementById("ca1");
+const ca2 = document.getElementById("ca2");
+const exam = document.getElementById("exam");
+const totalInput = document.getElementById("total");
+const gradeInput = document.getElementById("grade");
+const remarkInput = document.getElementById("remark");
+const resultForm = document.getElementById("resultForm");
+const resultBody = document.getElementById("resultBody");
+
+function calculateResult() {
+  const a = Number(assignment.value) || 0;
+  const c1 = Number(ca1.value) || 0;
+  const c2 = Number(ca2.value) || 0;
+  const e = Number(exam.value) || 0;
+
+  const total = a + c1 + c2 + e;
+
+  let grade = "";
+  let remark = "";
+
+  if (total >= 70) {
+    grade = "A";
+    remark = "Excellent";
+  } else if (total >= 60) {
+    grade = "B";
+    remark = "Very Good";
+  } else if (total >= 50) {
+    grade = "C";
+    remark = "Good";
+  } else if (total >= 45) {
+    grade = "D";
+    remark = "Fair";
+  } else if (total >= 40) {
+    grade = "E";
+    remark = "Pass";
+  } else {
+    grade = "F";
+    remark = "Fail";
+  }
+
+  totalInput.value = total;
+  gradeInput.value = grade;
+  remarkInput.value = remark;
+}
+
+[assignment, ca1, ca2, exam].forEach(input => {
+  input.addEventListener("input", calculateResult);
+});
+
+resultForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  calculateResult();
+
+  const studentName = document.getElementById("studentName").value;
+  const studentId = document.getElementById("studentId").value;
+  const studentClass = document.getElementById("studentClass").value;
+  const subject = document.getElementById("subject").value;
+
+  const row = document.createElement("tr");
+
+  row.innerHTML = `
+    <td>${studentName}</td>
+    <td>${studentId}</td>
+    <td>${studentClass}</td>
+    <td>${subject}</td>
+    <td>${assignment.value}</td>
+    <td>${ca1.value}</td>
+    <td>${ca2.value}</td>
+    <td>${exam.value}</td>
+    <td>${totalInput.value}</td>
+    <td>${gradeInput.value}</td>
+    <td>${remarkInput.value}</td>
+  `;
+
+  resultBody.appendChild(row);
+
+  alert("Result saved successfully.");
+
+  resultForm.reset();
+  totalInput.value = "";
+  gradeInput.value = "";
+  remarkInput.value = "";
+});
+</script>
+
+</body>
+</html>
