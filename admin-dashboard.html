@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Bilal Ibnu Rabah International Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="dashboard-layout">
+
+  <aside class="dashboard-sidebar">
+
+    <div class="dash-logo">
+      <img src="bilal logo.png" alt="Logo">
+
+      <h3>Admin Portal</h3>
+
+      <p>Bilal Ibnu Rabah Academy</p>
+    </div>
+
+    <nav class="dash-menu">
+
+      <a href="admin-dashboard.html" class="active">Dashboard</a>
+
+      <a href="#students">Students</a>
+
+      <a href="#teachers">Teachers</a>
+
+      <a href="#admission">Admissions</a>
+
+      <a href="#results">Results</a>
+
+      <a href="#notice">Notice Board</a>
+
+      <a href="portal.html">Back to Portal</a>
+
+      <a href="login.html">Logout</a>
+
+    </nav>
+
+  </aside>
+
+  <main class="dashboard-main">
+
+    <div class="dashboard-top">
+
+      <div>
+        <h1>Welcome, Admin</h1>
+
+        <p>
+          Manage students, teachers, admissions and school portal activities.
+        </p>
+      </div>
+
+      <a href="login.html" class="logout-btn">
+        Logout
+      </a>
+
+    </div>
+
+    <!-- DASHBOARD CARDS -->
+
+    <div class="dash-cards">
+
+      <div class="dash-card">
+        <h3>Total Students</h3>
+        <p>524</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Total Teachers</h3>
+        <p>42</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Admissions</h3>
+        <p>37</p>
+      </div>
+
+      <div class="dash-card">
+        <h3>Portal Status</h3>
+        <p>Active</p>
+      </div>
+
+    </div>
+
+    <!-- STUDENTS -->
+
+    <section class="dashboard-section" id="students">
+
+      <div class="dash-section-title">
+
+        <h2>Student Management</h2>
+
+        <p>Add and manage student records.</p>
+
+      </div>
+
+      <form class="teacher-form">
+
+        <div class="form-grid">
+
+          <div class="input-box">
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter student name">
+          </div>
+
+          <div class="input-box">
+            <label>Student ID</label>
+            <input type="text" placeholder="Example: BIRIA/JSS1/001">
+          </div>
+
+          <div class="input-box">
+            <label>Class</label>
+
+            <select>
+              <option>Select Class</option>
+              <option>Nursery</option>
+              <option>Primary</option>
+              <option>JSS</option>
+              <option>SSS</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label>Gender</label>
+
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+
+        </div>
+
+        <button class="submit-btn">
+          Add Student
+        </button>
+
+      </form>
+
+    </section>
+
+    <!-- TEACHERS -->
+
+    <section class="dashboard-section" id="teachers">
+
+      <div class="dash-section-title">
+
+        <h2>Teacher Management</h2>
+
+        <p>Add and manage teachers.</p>
+
+      </div>
+
+      <form class="teacher-form">
+
+        <div class="form-grid">
+
+          <div class="input-box">
+            <label>Teacher Name</label>
+            <input type="text" placeholder="Enter teacher name">
+          </div>
+
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter teacher email">
+          </div>
+
+          <div class="input-box">
+            <label>Subject</label>
+            <input type="text" placeholder="Example: Mathematics">
+          </div>
+
+          <div class="input-box">
+            <label>Class Assigned</label>
+            <input type="text" placeholder="Example: JSS 1">
+          </div>
+
+        </div>
+
+        <button class="submit-btn">
+          Add Teacher
+        </button>
+
+      </form>
+
+    </section>
+
+    <!-- ADMISSIONS -->
+
+    <section class="dashboard-section" id="admission">
+
+      <div class="dash-section-title">
+
+        <h2>Admission Requests</h2>
+
+        <p>Manage new student admission applications.</p>
+
+      </div>
+
+      <div class="table-wrap">
+
+        <table class="result-table">
+
+          <thead>
+
+            <tr>
+              <th>Name</th>
+              <th>Class</th>
+              <th>Parent</th>
+              <th>Status</th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Maryam Musa</td>
+              <td>Primary 3</td>
+              <td>Mr. Musa</td>
+              <td>Pending</td>
+            </tr>
+
+            <tr>
+              <td>Abdullahi Ibrahim</td>
+              <td>JSS 1</td>
+              <td>Mrs. Ibrahim</td>
+              <td>Approved</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+    <!-- RESULTS -->
+
+    <section class="dashboard-section" id="results">
+
+      <div class="dash-section-title">
+
+        <h2>Recent Results</h2>
+
+        <p>Latest uploaded academic records.</p>
+
+      </div>
+
+      <div class="table-wrap">
+
+        <table class="result-table">
+
+          <thead>
+
+            <tr>
+              <th>Student</th>
+              <th>Subject</th>
+              <th>Total</th>
+              <th>Grade</th>
+              <th>Remark</th>
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Ahmad Ibrahim</td>
+              <td>Mathematics</td>
+              <td>94</td>
+              <td>A</td>
+              <td>Excellent</td>
+            </tr>
+
+            <tr>
+              <td>Aisha Bello</td>
+              <td>English</td>
+              <td>78</td>
+              <td>B</td>
+              <td>Very Good</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+    <!-- NOTICE -->
+
+    <section class="dashboard-section" id="notice">
+
+      <div class="dash-section-title">
+
+        <h2>Notice Board</h2>
+
+        <p>School announcements and updates.</p>
+
+      </div>
+
+      <div class="notice-box">
+
+        <p>
+          First term examination will begin next month.
+          Teachers should complete result uploads before deadline.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</section>
+
+</body>
+</html>
