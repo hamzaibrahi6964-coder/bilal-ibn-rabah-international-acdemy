@@ -1018,4 +1018,53 @@ ACADEMICS PAGE
   }
 }
 
+/* PORTAL PAGE */
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.portal-card {
+  background: var(--white);
+  padding: 38px;
+  border-radius: 28px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  transition: 0.3s ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-8px);
+}
+
+.portal-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--brown);
+  color: var(--white);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.portal-card h3 {
+  color: var(--brown);
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.portal-card p {
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+  .portal-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
