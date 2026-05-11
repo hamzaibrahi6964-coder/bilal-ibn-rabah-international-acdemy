@@ -1524,3 +1524,27 @@ ACADEMICS PAGE
     padding: 20px !important;
   }
 }
+
+/* LOGIN LEFT SIDE MOBILE FIX */
+
+@media (max-width: 950px) {
+
+  .login-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .login-left {
+    display: none !important;
+  }
+
+  .login-right {
+    width: 100% !important;
+    padding: 35px 25px !important;
+  }
+
+  .login-form h2 {
+    font-size: 40px !important;
+    color: var(--brown) !important;
+  }
+
+}
