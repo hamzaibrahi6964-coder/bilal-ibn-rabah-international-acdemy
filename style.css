@@ -954,4 +954,68 @@ ACADEMICS PAGE
 
 }
 
+/* CONTACT PAGE */
+
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: start;
+}
+
+.contact-info-box,
+.contact-form-box {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+
+.contact-info-box h2 {
+  color: var(--black);
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.contact-list {
+  margin-top: 25px;
+}
+
+.contact-list div {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-list div:last-child {
+  border-bottom: none;
+}
+
+.contact-list strong {
+  color: var(--brown);
+  font-size: 17px;
+}
+
+.contact-form-box h3 {
+  color: var(--brown);
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+  .contact-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-box,
+  .contact-form-box {
+    padding: 28px;
+  }
+
+  .contact-info-box h2 {
+    font-size: 34px;
+  }
+}
+
 
