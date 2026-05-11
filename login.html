@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Bilal Ibnu Rabah International Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="login-page">
+
+  <div class="login-overlay"></div>
+
+  <div class="login-container">
+
+    <div class="login-left">
+
+      <div class="login-brand">
+        <img src="bilal logo.png" alt="School Logo">
+
+        <h1>Bilal Ibnu Rabah International Academy</h1>
+
+        <p>
+          Access the school portal for parents, teachers and administrators.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="login-right">
+
+      <form class="login-form" id="loginForm">
+
+        <span class="section-tag">School Portal</span>
+
+        <h2>Login to Continue</h2>
+
+        <p class="login-text">
+          Enter your login details below.
+        </p>
+
+        <div class="input-box">
+          <label>Select Role</label>
+
+          <select id="role">
+            <option value="">Choose role</option>
+            <option value="parent">Parent</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label>Email or Student ID</label>
+
+          <input type="text" id="username" placeholder="Enter email or student ID">
+        </div>
+
+        <div class="input-box">
+          <label>Password</label>
+
+          <input type="password" id="password" placeholder="Enter password">
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Login
+        </button>
+
+        <p class="login-note">
+          Demo Login Only — Backend connection will be added later.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+
+const loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  const role = document.getElementById("role").value;
+
+  if(role === "parent") {
+
+    window.location.href = "parent-dashboard.html";
+
+  }
+
+  else if(role === "teacher") {
+
+    window.location.href = "teacher-dashboard.html";
+
+  }
+
+  else if(role === "admin") {
+
+    window.location.href = "admin-dashboard.html";
+
+  }
+
+  else {
+
+    alert("Please select a role.");
+
+  }
+
+});
+
+</script>
+
+</body>
+</html>
