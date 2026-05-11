@@ -1453,3 +1453,49 @@ ACADEMICS PAGE
 
 }
 
+/* FIX FADED / INVISIBLE TEXT */
+
+.stats-card,
+.admission {
+  background: linear-gradient(135deg, var(--brown), var(--dark)) !important;
+}
+
+.stats-card h3,
+.stats-card p,
+.admission h2,
+.admission p {
+  color: #ffffff !important;
+}
+
+.admission .section-tag {
+  background: #ffffff !important;
+  color: var(--brown) !important;
+}
+
+.white-btn {
+  background: #ffffff !important;
+  color: var(--brown) !important;
+}
+
+.dashboard-sidebar {
+  background: linear-gradient(180deg, var(--brown), var(--dark)) !important;
+}
+
+.dashboard-sidebar,
+.dashboard-sidebar h3,
+.dashboard-sidebar p,
+.dash-menu a {
+  color: #ffffff !important;
+}
+
+@media (max-width: 900px) {
+  .stats-card {
+    background: var(--brown) !important;
+  }
+
+  .stats-card h3,
+  .stats-card p {
+    color: #ffffff !important;
+  }
+}
+
